@@ -1,17 +1,41 @@
+/* GLOBAL STYLING */
+
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
+  width: 80%;
+  margin: 0 auto;
 }
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kavivanar", cursive;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2rem;
+  color: #a51f10;
+  margin: 0;
+}
+
+/* HEADER */
 
 header {
   display: flex;
@@ -31,23 +55,50 @@ header {
   color: #da0090;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Kavivanar", cursive;
-  font-weight: normal;
+/* NAV BAR  */
+
+nav {
+  text-align: center;
+  border-top: 1px solid #da0090;
+  border-bottom: 1px solid #a51f10;
+  padding: 0.5rem 0;
 }
-h2 {
-  font-size: 2rem;
-  color: #a51f10;
-  margin: 0;
+
+nav ul li {
+  display: inline-block;
 }
+
+/* ARTICLE  */
+
+article {
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 1rem;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+article p a {
+  margin: 1rem 0;
+}
+
 a {
   color: #da0090;
   text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
 }
 a:hover {
   text-decoration: underline;
@@ -55,6 +106,7 @@ a:hover {
 .posted {
   font-size: 0.8rem;
   color: #89a611;
+  margin: 1rem 0;
 }
 footer {
   text-align: center;
