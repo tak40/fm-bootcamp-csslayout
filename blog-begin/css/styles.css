@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -70,9 +70,13 @@ nav ul li {
 
 /* ARTICLE  */
 
+section {
+  border-bottom: 1px solid #da0090;
+}
+
 article {
   overflow: hidden;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .floatleft {
@@ -90,7 +94,7 @@ img {
   border-radius: 1rem;
 }
 
-article p a {
+p {
   margin: 1rem 0;
 }
 
@@ -100,15 +104,41 @@ a {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
 }
+
+article p a {
+  padding: 0;
+}
+
 a:hover {
   text-decoration: underline;
 }
+
 .posted {
   font-size: 0.8rem;
   color: #89a611;
-  margin: 1rem 0;
 }
+
+/* FOOTER  */
+
 footer {
   text-align: center;
   font-size: 0.8rem;
+  border-top: 1px solid #a51f10;
+  margin-top: 0.5rem;
+}
+
+footer p {
+  margin: 2rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  margin: 0;
 }
